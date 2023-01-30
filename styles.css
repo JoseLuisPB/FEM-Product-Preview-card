@@ -15,12 +15,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 1440px;
+  overflow: hidden;
 }
 
 main {
   background-color: hsl(0deg, 0%, 100%);
   width: 55vw;
-  border: hsl(228deg, 12%, 48%) solid 3px;
   border-radius: 0.5rem;
   display: flex;
 }
@@ -71,6 +71,8 @@ button {
 
 button:hover {
   background-color: hsl(212deg, 21%, 14%);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 ul {
@@ -129,10 +131,15 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+.author {
+  text-align: center;
+}
+
 /*Media queries*/
 @media (max-width: 480px) {
   body {
     width: 375px;
+    overflow-y: scroll;
   }
   main {
     display: flex;
